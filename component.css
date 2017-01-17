@@ -1,0 +1,42 @@
+/* Component styles */
+
+body {
+  width: 1250px;
+  height: 700px;
+  background: #222;
+  color: #fff;
+  font-family: codropsicons;
+  text-align: right;
+  line-height: 120px;
+  font-size: 40px;
+
+}
+
+.button.styl-material {
+	-webkit-transition: 200ms background cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 200ms background cubic-bezier(0.4, 0, 0.2, 1);
+	 background: #222;
+}
+
+.button.styl-material:hover,
+.button.styl-material:focus {
+	outline: none;
+	 background: #222;
+}
+
+.ripple-obj {
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	fill: #AD1457;
+}
+
+.ripple-obj use {
+	opacity: 0;
+}
+
+

@@ -1,0 +1,72 @@
+body {
+  width: 2000px;
+  height: 2000px;
+  background: #222;
+  color: #fff;
+font-family: codropsicons;
+ text-align: center;
+  line-height: 120px;
+  font-size: 40px;
+}
+
+/*  Ripple */
+
+.ripple {
+  height: 0px;
+  width: 0px;
+
+   background: rgba(255, 255, 255, 0.4);
+ -webkit-transform: scale(0.1);
+         transform: scale(0.1);
+ 
+  position: absolute;
+
+  opacity: 1;
+
+}
+.rippleEffect {
+-webkit-animation: rippleDrop 1.5s ease-out running;
+            animation: rippleDrop 1.5s ease-out running;
+
+
+  }
+
+@-webkit-keyframes rippleDrop {
+ 0%
+{
+ -webkit-transform: scale(0.03);
+         transform: scale(0.03);
+   
+         opacity:0; 
+  }
+
+
+
+  100% {
+ -webkit-transform: scale(.1);
+         transform: scale(.1);
+   
+         
+  }
+}
+
+@keyframes rippleDrop {
+ 0%   
+{
+ -webkit-transform: scale(0.03);
+         transform: scale(0.03);
+   
+         opacity:0;
+  }
+
+
+
+  100% {
+ -webkit-transform: scale(.1);
+         transform: scale(.1);
+   
+        
+  }
+}
+
+

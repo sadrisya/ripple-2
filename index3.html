@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	
+</head>
+
+<body id="js-ripple-btn" class="button styl-material">
+
+<a href="3.html">Square</a>
+
+<a href="index.html">circle</a>
+<a href="index3.html">Triangle</a>
+
+<div style="height: 0; width: 0; position: absolute; " aria-hidden="true">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+			<symbol id="ripply-scott" viewBox="0 0 100 100">
+				<g>
+					
+					<polygon fill="rgba(255,255,255,0.25)" transform="scale(0.25), translate(145, 145)" points=" 50 15, 100 100, 0 100" />
+				</g>
+			</symbol>
+		</svg>
+	</div>		
+			
+
+		<svg class="ripple-obj" id="js-ripple">
+					<use width="4" height="4" xlink:href="#ripply-scott" class="js-ripple"></use>
+				</svg>		
+				
+		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+	<script src="js/ripple-config.js"></script>
+</body>
+
+</html>
